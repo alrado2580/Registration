@@ -20,7 +20,7 @@
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       
-      <h1><a href="https://alrado2580.github.io/Registration/">Registration</a></h1>
+      <h1><a href="https://alrado2580.github.io/Registration/registration.html">Registration</a></h1>
           
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script></body></html>
