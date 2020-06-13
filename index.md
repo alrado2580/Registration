@@ -1,44 +1,39 @@
 <html>
-    <head>
-    <title>Home</title>
-    <script>
-		function fun(){
-		var user = document.getElementById("un");
-		var pass = document.getElementById("password");
-		var a = /^[a-zA-z]{1}[a-zA-z0-9]/;
-		var b = /^[a-zA-z1-9]{1}[a-zA-z0-9]/;
-		
-			if(user.value.length == "" && pass.value.length == ""){
-			document.getElementById("show").innerHTML="Enter username";
-			document.getElementById("show1").innerHTML="Enter password";
-			}
-			else if(user.value.length == ""){
-			document.getElementById("show").innerHTML="Enter username";
-			}
-			else if(pass.value.length == ""){
-			document.getElementById("show1").innerHTML="Enter password";
-			}			
-			else if(a.test(user.value) == true && b.test(pass.value) == true){
-			document.getElementById("show").innerHTML="username saved";
-			document.getElementById("show1").innerHTML="password saved";
-			}
-			else if(a.test(user.value) == false){
-			document.getElementById("show").innerHTML="invalid format";
-			}
-			else{
-			document.getElementById("show1").innerHTML="invalid format";
-			}
-		}
-    </script>
-</head>
-    <body>
-
-	 <table>
-
-	<tr><td><input type="text"  id="un" placeholder="username"></td><td><p id="show"></p></td></tr>
-	<tr><td><input type="password"  id="password" placeholder="password"></td><td><p id="show1"></p></td></tr>
-	<tr><td><input type="button" value="Submit" onfocus="fun()"/></td></tr>
+	<head>
+		<title>Registration</title>
+	</head>
 	
-    </table>
-</body>
+	<body>
+		<h1 align="center"><font color="grey" face="arial"><b><u>Student Registration Form</u></b></font></h1>
+	
+		<form>
+			<fieldset>
+				<legend><font size="3px" color="dark grey" face="arial"><b><i><u>Personal Details</u></b></i></font></legend>
+				<table>
+					<!--<tr><td><b>Enrollment Number</b></td><td> :- </td><td><input type="text" name="eno" placeholder="1729444893"></td></tr>	-->
+					<tr><td><b>Student Name</b></td><td> :- </td><td><input type="text" name="fn" placeholder="First Middle Surname"></td></tr>
+					<tr><td><b>Contact Number</b></td><td> :- </td><td><input type="text" name="pno" placeholder="+91 9876543210"></td></tr>
+                                         <tr><td><b>Whatsapp Number</b></td><td> :- </td><td><input type="text" name="pno" placeholder="+91 9876543210"></td></tr> 
+					<tr><td><b>E-Mail ID</b></td><td> :- </td><td><input type="text" name="mail" placeholder="example@xyz.com"></td></tr> 
+					<tr><td><b>Gender</b></td><td> :- </td><td><input type="radio" name="gender" value="male">Male &nbsp &nbsp &nbsp &nbsp 
+													  <input type="radio" name="gender" value="female">Female</td></tr>
+				</table> 
+			</fieldset><br>
+						
+		
+                         <br>
+						
+			<fieldset>
+				<legend><font size="3px" color="dark grey" face="arial"><b><i><u>Other Details</u></b></i></font></legend>
+				<table>
+					<tr><td><b>Hobbies</b></td><td> :- </td><td><input type="checkbox" name="in" value="in">Indoor &nbsp &nbsp &nbsp 
+													  <input type="checkbox" name="out" value="out">Outdoor</td></tr>
+					<tr><td><b>Comment</b></td><td> :- </td><td><textarea maxlength="200" rows="3" cols="20" name="comment" placeholder="max 200 words"></textarea></td></tr>	
+				</table>
+			</fieldset><br>
+						
+			&nbsp <input type="button" value="submit">
+			
+		</form>
+	</body>
 </html>
