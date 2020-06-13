@@ -15,12 +15,14 @@
 {"@type":"WebSite","headline":"Registration","url":"https://alrado2580.github.io/Registration/","name":"Registration","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/Registration/assets/css/style.css?v=0571e943828409738a1d3f640ae4d7857a3fc5ad">
+   <!-- <link rel="stylesheet" href="/Registration/assets/css/style.css?v=0571e943828409738a1d3f640ae4d7857a3fc5ad"> -->
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       
       <h1><a href="https://alrado2580.github.io/Registration/registration.html">Registration</a></h1>
+      <h2><a href="https://alrado2580.github.io/Registration/login.html">Login</a></h2>
+
           
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script></body></html>
