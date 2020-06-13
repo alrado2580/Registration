@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+<html>
+    <head>
+    <title>Home</title>
+    <script>
+		function fun(){
+		var user = document.getElementById("un");
+		var pass = document.getElementById("password");
+		var a = /^[a-zA-z]{1}[a-zA-z0-9]/;
+		var b = /^[a-zA-z1-9]{1}[a-zA-z0-9]/;
+		
+			if(user.value.length == "" && pass.value.length == ""){
+			document.getElementById("show").innerHTML="Enter username";
+			document.getElementById("show1").innerHTML="Enter password";
+			}
+			else if(user.value.length == ""){
+			document.getElementById("show").innerHTML="Enter username";
+			}
+			else if(pass.value.length == ""){
+			document.getElementById("show1").innerHTML="Enter password";
+			}			
+			else if(a.test(user.value) == true && b.test(pass.value) == true){
+			document.getElementById("show").innerHTML="username saved";
+			document.getElementById("show1").innerHTML="password saved";
+			}
+			else if(a.test(user.value) == false){
+			document.getElementById("show").innerHTML="invalid format";
+			}
+			else{
+			document.getElementById("show1").innerHTML="invalid format";
+			}
+		}
+    </script>
+</head>
+    <body>
 
-You can use the [editor on GitHub](https://github.com/alrado2580/test/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+	 <table>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alrado2580/test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+	<tr><td><input type="text"  id="un" placeholder="username"></td><td><p id="show"></p></td></tr>
+	<tr><td><input type="password"  id="password" placeholder="password"></td><td><p id="show1"></p></td></tr>
+	<tr><td><input type="button" value="Submit" onfocus="fun()"/></td></tr>
+	
+    </table>
+</body>
+</html>
